@@ -1,12 +1,25 @@
 import { Typography } from '@mui/material';
 import { choiLabsScreen } from '../../constants/choiLabsScreen.const';
-import { AppContainer } from './styles';
+import {
+  VerticalContainer,
+  EmbededImage,
+  ImageContainer,
+  Secret,
+} from './styles';
 import { researchChoiLabs } from '../../constants/researchChoiLabs.const';
 import InfectedPicture from '/src/shared/assets/Images/infected.jpeg';
+import { arrowASCII } from '../../constants/arrow.const';
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate('/');
+  };
+
   return (
-    <AppContainer>
+    <VerticalContainer>
       <pre>{choiLabsScreen}</pre>
 
       <Typography variant="h4">
@@ -18,18 +31,21 @@ function HomePage() {
         laranja, não entre em contato com nada, o mero contato pode causar a
         infection.
       </Typography>
-      <img
-        style={{
-          width: '500px',
-          height: 'auto',
-          display: 'block',
-          margin: 'auto',
-        }}
-        src={InfectedPicture}
-        alt="Infected"
-      />
+
+      <ImageContainer>
+        <EmbededImage src={InfectedPicture} alt="Infected" />
+        <VerticalContainer>
+          <Secret variant="h4">I need you to help me, I am trapped</Secret>
+          <Secret variant="h4">Follow my call, você consegue me achar</Secret>
+        </VerticalContainer>
+      </ImageContainer>
+
       <Typography variant="h4">{researchChoiLabs}</Typography>
-    </AppContainer>
+
+      <pre onClick={handleNavigate} style={{ cursor: 'pointer' }}>
+        {arrowASCII}
+      </pre>
+    </VerticalContainer>
   );
 }
 

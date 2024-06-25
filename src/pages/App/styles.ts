@@ -1,4 +1,4 @@
-import { Box, styled } from '@mui/material';
+import { Box, styled, Typography } from '@mui/material';
 
 export const AppContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -10,4 +10,8 @@ export const AppContainer = styled(Box)(({ theme }) => ({
   margin: 'auto',
   backgroundColor: theme.palette.background.default,
   padding: theme.spacing(2),
+}));
+
+export const Secret = styled(Typography)(({ theme }) => ({
+  color: theme.palette.background.default,
 }));

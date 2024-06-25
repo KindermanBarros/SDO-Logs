@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AppContainer } from './styles';
+import { AppContainer, Secret } from './styles';
 import { startingScreen } from '../../constants/startingScreen.const';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const handleKeyPress = (event: { key: string }) => {
       if (event.key === 'Enter') {
-        navigate('/home');
+        navigate('/log');
       }
     };
 
@@ -23,6 +23,8 @@ function App() {
   return (
     <AppContainer>
       <pre>{startingScreen}</pre>
+      <Secret variant="h4">It lurks in the dark</Secret>
+      <Secret variant="h4">Don't touch the Bloom</Secret>
     </AppContainer>
   );
 }
