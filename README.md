@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Silêncio dos Oráculos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official repository for **Silêncio dos Oráculos Logs**, a unique website designed to enhance your tabletop RPG experience by integrating puzzles, simulations, and various computer-like interactions directly into your game sessions.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Silêncio dos Oráculos Logs** aims to bring a new level of immersion and interaction to tabletop RPGs. By providing a application where game masters can use their puzzles, simulations, and other computer-like interactions, we make it easier to integrate these elements into your games using React if you fork the project, being easy to add depth and complexity to your storytelling.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Puzzles**: Prebuilt puzzles to use in a Silêncio dos Oráculos campaign.
+- **Simulation Tools**: Simulate computer interactions and other technological elements within your RPG world.
+- **Interactive Storytelling**: Enhance your storytelling with interactive elements that engage your players in new and exciting ways.
+- **Integration**: Designed to be seamlessly integrated into my tabletop RPG session.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+To start using **Silêncio dos Oráculos Logs** in your tabletop RPG sessions, follow these steps:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Fork this project**: Create a fork of this project and play arround with the texts.
+2. **Create Your Content**: Use our code to incorporate your puzzles, simulations, and other interactive content.
+3. **Integrate into Your Game**: Make the content fit into your game sessions for an enhanced gaming experience.
+
+## License
+
+**Silêncio dos Oráculos Logs** is released under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as you see fit.
+
+## Acknowledgments
+
+A special thank you to all the players I traumatized, game masters that gave me so much inspiration, and developers who have contributed their time, ideas, and feedback to make **Silêncio dos Oráculos** a reality.
+
+---
+
+Embark on a journey of mystery, technology, and adventure with **Silêncio dos Oráculos**!
