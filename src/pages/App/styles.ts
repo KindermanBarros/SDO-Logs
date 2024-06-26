@@ -5,9 +5,9 @@ export const AppContainer = styled(Box)(({ theme }) => ({
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  height: '100%',
   width: '100%',
-  margin: 'auto',
+  height: '100%',
+  margin: '0 auto',
   backgroundColor: theme.palette.background.default,
   padding: theme.spacing(2),
 }));

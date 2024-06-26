@@ -1,4 +1,5 @@
 import { Box, styled, Typography } from '@mui/material';
+import ConnectionIII from '../../styles/Fonts/ConnectionIii-Rj3W.otf';
 
 export const VerticalContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -6,6 +7,7 @@ export const VerticalContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
   backgroundColor: theme.palette.background.default,
+  fontFamily: ConnectionIII,
 }));
 
 export const ImageContainer = styled(Box)(({ theme }) => ({

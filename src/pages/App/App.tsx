@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AppContainer, Secret } from './styles';
+import { AppContainer } from './styles';
 import { startingScreen } from '../../constants/startingScreen.const';
+import { TextArtStyled } from '../../shared/components/TextArtStyled';
 
 function App() {
   const navigate = useNavigate();
@@ -22,9 +23,7 @@ function App() {
 
   return (
     <AppContainer>
-      <pre>{startingScreen}</pre>
-      <Secret variant="h4">It lurks in the dark</Secret>
-      <Secret variant="h4">Don't touch the Bloom</Secret>
+      <TextArtStyled>{startingScreen}</TextArtStyled>
     </AppContainer>
   );
 }

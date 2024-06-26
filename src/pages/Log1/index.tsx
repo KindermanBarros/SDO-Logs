@@ -10,6 +10,7 @@ import { researchChoiLabs } from '../../constants/researchChoiLabs.const';
 import InfectedPicture from '/src/shared/assets/Images/infected.jpeg';
 import { arrowASCII } from '../../constants/arrow.const';
 import { useNavigate } from 'react-router-dom';
+import { TextArtStyled } from '../../shared/components/TextArtStyled';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -20,16 +21,13 @@ function HomePage() {
 
   return (
     <VerticalContainer>
-      <pre>{choiLabsScreen}</pre>
+      <TextArtStyled>{choiLabsScreen}</TextArtStyled>
 
       <Typography variant="h4">
         Os esporos da entity chamada de Bloom pelos cientistas é promissor,
-        atualmente está sendo capaz de até mesmo a ajudar com
-      </Typography>
-      <Typography variant="h4">
-        Se você estiver lendo isso dentro do laboratório, não respire o gás
-        laranja, não entre em contato com nada, o mero contato pode causar a
-        infection.
+        atualmente está sendo capaz de até mesmo a ajudar com <br /> Se você
+        estiver lendo isso dentro do laboratório, não respire o gás laranja, não
+        entre em contato com nada, o mero contato pode causar a infection.
       </Typography>
 
       <ImageContainer>
@@ -42,9 +40,9 @@ function HomePage() {
 
       <Typography variant="h4">{researchChoiLabs}</Typography>
 
-      <pre onClick={handleNavigate} style={{ cursor: 'pointer' }}>
+      <TextArtStyled onClick={handleNavigate} style={{ cursor: 'pointer' }}>
         {arrowASCII}
-      </pre>
+      </TextArtStyled>
     </VerticalContainer>
   );
 }
